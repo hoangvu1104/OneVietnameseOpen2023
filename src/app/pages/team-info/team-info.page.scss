@@ -1,0 +1,38 @@
+.team-members {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .team-members th,
+  .team-members td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .team-members th {
+    background-color: #f2f2f2;
+  }
+
+  .team-name {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .yellow-card::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: yellow;
+    border-radius: 50%;
+  }
+
+  .red-card::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+  }

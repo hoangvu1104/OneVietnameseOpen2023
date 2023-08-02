@@ -1,0 +1,54 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="3">
+              <ion-img src="/MontrealSuperCup2023/assets/images/Logo.png"></ion-img>
+            </ion-col>
+            <ion-col size="9">
+              <div class="team-name">{{ displayTitle }}</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <table class="team-members">
+          <thead>
+            <tr>
+              <th>Tên đội</th>
+              <th>Tên cầu thủ</th>
+              <th>Số áo</th>
+              <th *ngIf="showGoalsStatic">Bàn thắng</th>
+              <th *ngIf="!showGoalsStatic">Kiến tạo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let player of playerResults">
+              <td>{{player.teamName}}</td>
+              <td>{{player.playerName}}</td>
+              <td>{{player.playerNumber}}</td>
+              <td *ngIf="showGoalsStatic">{{player.goals}}</td>
+              <td *ngIf="!showGoalsStatic" >{{player.assists}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-list class="radioClass">
+    <ion-radio-group value="goals" (ionChange)="changValue($event);">
+      <ion-item>
+        <ion-label>Danh sách ghi bàn</ion-label>
+        <ion-radio slot="end" value="goals"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Danh sách kiến tạo</ion-label>
+        <ion-radio slot="end" value="assists"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>

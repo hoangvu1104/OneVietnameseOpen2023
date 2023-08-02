@@ -1,0 +1,62 @@
+<app-toolbar-header></app-toolbar-header>
+<ion-content>
+  <div [ngClass]="{'fireworks-container': repetitions == repeatTimes}">
+    <div class="happy-tournament" *ngIf="repetitions == 0">
+      <span class="happy-tournament-text">Tiêu chí bốc thăm chia bảng</span>
+    </div>
+    <div class="happy-tournament" *ngIf="repetitions == 0">
+      <span class="happy-tournament-text">
+        1. Hai đội cùng CLB (BFC1 và BFC2) không vào chung 1 bảng
+      </span>
+    </div>
+    <div class="happy-tournament" *ngIf="repetitions == 0">
+      <span class="happy-tournament-text">2. 3 đội thành phố Montreal (Stechcho, 3 Miền FC, VMU) không vào chung 1 bảng
+      </span>
+    </div>
+    <div class="happy-tournament" *ngIf="repetitions != 0">
+      <span class="happy-tournament-text">{{ content }}</span>
+    </div>
+    <ion-grid>
+      <ion-row *ngIf="repetitions != 0">
+        <ion-col size="6">
+          <div class="group-container">
+            <h2 class="group-heading">Bảng A</h2>
+            <ion-list>
+              <ion-item *ngFor="let team of teamsToShowA" class="team-item">
+                <div class="team-info">
+                  <img class="team-image" [src]="commonFunctions.getTeamImageStyle(team, false)">
+                </div>
+                <div class="team-name">{{ team }}</div>
+              </ion-item>
+            </ion-list>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="group-container">
+            <h2 class="group-heading">Bảng B</h2>
+            <ion-list>
+              <ion-item *ngFor="let team of teamsToShowB" class="team-item">
+                <div class="team-info">
+                  <img class="team-image" [src]="commonFunctions.getTeamImageStyle(team, false)">
+                </div>
+                <div class="team-name">{{ team }}</div>
+              </ion-item>
+            </ion-list>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="happy-tournament" *ngIf="repetitions == repeatTimes">
+      <span class="happy-tournament-text">Chúc các đội tham gia thi đấu tốt!</span>
+    </div>
+    <div class="happy-tournament" *ngIf="repetitions == repeatTimes">
+      <span class="happy-tournament-text">Chúc giải đấu thành công!</span>
+    </div>
+    <div class="happy-tournament" *ngIf="countdown != 0">
+      <span class="btn" (click)="startCountdown()">Chuẩn bị bốc thăm trong {{ countdown }} giây</span>
+    </div>
+    <div class="happy-tournament" *ngIf="repetitions == repeatTimes">
+      <span class="btn" (click)="scheduleDetail()">Xem lịch thi đấu chi tiết</span>
+    </div>
+  </div>
+</ion-content>

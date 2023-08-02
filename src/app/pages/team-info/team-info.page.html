@@ -1,0 +1,44 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="3">
+              <ion-img src="{{ teamInfo?.teamLogoUrl}}"></ion-img>
+            </ion-col>
+            <ion-col size="9">
+              <div class="team-name">{{ teamInfo?.teamName}}</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <table class="team-members">
+          <thead>
+            <tr>
+              <th>Tên cầu thủ</th>
+              <th style="text-align: center;">Số áo</th>
+              <th class="textDisplay">Bàn thắng</th>
+              <th class="textDisplay">Kiến tạo</th>
+              <th class="yellow-card"></th>
+              <th class="red-card"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let player of teamInfo?.teamMembers">
+              <td>{{player.playerName}}</td>
+              <td style="text-align: center;">{{player.playerNumber}}</td>
+              <td style="text-align: center;">{{player.goals}}</td>
+              <td style="text-align: center;">{{player.assists}}</td>
+              <td style="text-align: center;">{{player.yellowCards}}</td>
+              <td style="text-align: center;">{{player.redCards}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
