@@ -757,7 +757,7 @@ export class TeamInfoPage implements OnInit {
           })
         };
         break;
-      case Teams.VMU:
+      case Teams.VinabisFC:
         this.teamInfo = {
           teamName: teamName,
           teamLogoUrl: `${StaticVariable.ImagesPath}${StaticVariable.VMULogo}`,

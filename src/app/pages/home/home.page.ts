@@ -83,28 +83,59 @@ export class HomePage implements OnInit {
       }, 1000);
     }
   }
+  //Old when having 3 Montreal teams
+  // generateTeamAssignments(): string[][] {
+  //   const groups = {
+  //     Group1: [Teams.BFC1, Teams.BFC2],
+  //     Group2: [Teams.VMU, Teams.Stechco],
+  //     Group3: [Teams.FC3Mien, Teams.FCCuaLo],
+  //     Group4: [Teams.SaiGonUnited, Teams.VietSentinels]
+  //   };
+  //   const teamsA: string[] = [];
+  //   const teamsB: string[] = [];
+  //   for (const groupName in groups) {
+  //     if (groups.hasOwnProperty(groupName)) {
+  //       const teamGroup = groups[groupName as keyof typeof groups];
+  //       this.shuffleArray(teamGroup); // Randomly shuffle teams within each group
+  //       teamsA.push(teamGroup[0]);
+  //       teamsB.push(teamGroup[1]);
+  //     }
+  //   }
+  //   this.shuffleArray(teamsA); // Randomly shuffle teams within group A
+  //   this.shuffleArray(teamsB); // Randomly shuffle teams within group B
+  //   return [teamsA, teamsB];
+  // }
 
+
+  //New - only 2 montreal teams
   generateTeamAssignments(): string[][] {
-    const groups = {
-      Group1: [Teams.BFC1, Teams.BFC2],
-      Group2: [Teams.VMU, Teams.Stechco],
-      Group3: [Teams.FC3Mien, Teams.FCCuaLo],
-      Group4: [Teams.SaiGonUnited, Teams.VietSentinels]
-    };
+    const teamMontreals: string[] = [Teams.Stechco, Teams.FC3Mien];
+    const teamOttawas: string[] = [Teams.SaiGonUnited, Teams.VietSentinels, Teams.FCCuaLo, Teams.VinabisFC];
+    const teamBFC: string[] = [Teams.BFC1, Teams.BFC2];
+
+    //Random teams in these group before assign
+    this.shuffleArray(teamMontreals);
+    this.shuffleArray(teamOttawas);
+    this.shuffleArray(teamBFC);
+
     const teamsA: string[] = [];
     const teamsB: string[] = [];
-    for (const groupName in groups) {
-      if (groups.hasOwnProperty(groupName)) {
-        const teamGroup = groups[groupName as keyof typeof groups];
-        this.shuffleArray(teamGroup); // Randomly shuffle teams within each group
-        teamsA.push(teamGroup[0]);
-        teamsB.push(teamGroup[1]);
-      }
-    }
+
+    teamsA.push(teamMontreals[0]);
+    teamsA.push(teamOttawas[0]);
+    teamsA.push(teamOttawas[1]);
+    teamsA.push(teamBFC[0]);
+
+    teamsB.push(teamMontreals[1]);
+    teamsB.push(teamOttawas[2]);
+    teamsB.push(teamOttawas[3]);
+    teamsB.push(teamBFC[1]);
+
     this.shuffleArray(teamsA); // Randomly shuffle teams within group A
     this.shuffleArray(teamsB); // Randomly shuffle teams within group B
     return [teamsA, teamsB];
   }
+
   shuffleArray(array: any[]): void {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));

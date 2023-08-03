@@ -10,7 +10,7 @@ import { Teams } from 'src/shared/teams';
   styleUrls: ['./tables.page.scss'],
 })
 export class TablesPage implements OnInit {
-  groupA = [Teams.VMU, Teams.Stechco, Teams.BFC1, Teams.FCCuaLo];
+  groupA = [Teams.VinabisFC, Teams.Stechco, Teams.BFC1, Teams.FCCuaLo];
   groupB = [Teams.FC3Mien, Teams.BFC2, Teams.SaiGonUnited, Teams.VietSentinels];
   displayLogo: boolean = false;
   message: string = 'Hiển thị logo';

@@ -28,7 +28,7 @@ export class TableResultPage implements OnInit {
   ngOnInit() {
     this.teamResultGroupA = [
       {
-        teamName: Teams.VMU,
+        teamName: Teams.VinabisFC,
         point: 0,
         won: 0,
         lost: 3,

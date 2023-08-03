@@ -14,33 +14,33 @@ export class CommonFunctions {
     switch (team) {
       case Teams.BFC1:
       case Teams.BFC2:
-      case 'BFC1(*)':
-      case 'BFC2(*)':
+      case Teams.BFC2_Star:
+      case Teams.BFC1_Star:
         imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.YellowTeam}` : `${StaticVariable.BFCLogo}`);
         break;
       case Teams.FC3Mien:
-      case '3 Miền FC(*)':
+      case Teams.FC3Mien_Star:
         imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.RedTeam}` : `${StaticVariable.FC3MienLogo}`);
         break;
       case Teams.FCCuaLo:
-      case 'FC Cửa Lò(*)':
+      case Teams.FCCuaLo_Star:
         imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.BlueTeam}` : `${StaticVariable.FCCuaLoLogo}`);
         break;
       case Teams.SaiGonUnited:
-      case 'Sài Gòn United(*)':
+      case Teams.SaiGonUnited_Star:
         imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.BlueTeam}` : `${StaticVariable.SaigonUnitedLogo}`);
         break;
       case Teams.Stechco:
-      case 'Stechco(*)':
+      case Teams.Stechco_Star:
         imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.BlueTeam}` : `${StaticVariable.StechcoLogo}`);
         break;
       case Teams.VietSentinels:
-      case 'Viet Sentinels(*)':
+      case Teams.VietSentinels_Star:
         imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.BlueTeam}` : `${StaticVariable.VietSentinelsLogo}`);
         break;
-      case Teams.VMU:
-      case 'VMU(*)':
-        imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.BlueTeam}` : `${StaticVariable.VMULogo}`);
+      case Teams.VinabisFC:
+      case Teams.VinabisFC_Star:
+        imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.BlueTeam}` : `${StaticVariable.CupLogo}`);
         break;
       default:
         imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.WhiteTeam}` : `${StaticVariable.CupLogo}`);
