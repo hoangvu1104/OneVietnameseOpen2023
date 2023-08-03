@@ -23,7 +23,7 @@ export class HomePage implements OnInit {
 
   teamsToShowA: string[] = []; // Teams to show for Group A
   teamsToShowB: string[] = []; // Teams to show for Group B
-  countdown = 3;
+  countdown = 10;
   constructor(private navCtrl: NavController,
     public commonFunctions: CommonFunctions) { }
 
