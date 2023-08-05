@@ -18,10 +18,10 @@ export class ResultPage implements OnInit {
   groupB: string[] = [];
   divisions: Division[] = [];
   playoffs: Division[] = [];
-  time1: string = '8h30-9h30';
-  time2: string = '9h45-10h45';
-  time3: string = '11h-12h';
-  time4: string = '13h-14h';
+  time1: string = '8h-9h';
+  time2: string = '9h15-10h15';
+  time3: string = '10h30-11h30';
+  time4: string = '12h30-13h30';
   displayLogo: boolean = false;
   message: string = 'Hiển thị logo';
 
@@ -118,13 +118,13 @@ export class ResultPage implements OnInit {
     this.teamAssignments = this.route.snapshot.queryParams;
     //this.teamAssignments = JSON.parse(data);
     //this.route.queryParams['groupA']
-    console.log('this.teamAssignments', this.teamAssignments);
-    this.groupA = JSON.parse(this.teamAssignments?.groupA);
-    this.groupB = JSON.parse(this.teamAssignments?.groupB);
+    // console.log('this.teamAssignments', this.teamAssignments);
+    // this.groupA = JSON.parse(this.teamAssignments?.groupA);
+    // this.groupB = JSON.parse(this.teamAssignments?.groupB);
 
     // this.commonFunctions.enableMenuSwipe();
-    // this.groupA = [Teams.VMU, Teams.Stechco, Teams.BFC1, Teams.FCCuaLo];
-    // this.groupB = [Teams.FC3Mien, Teams.BFC2, Teams.FCSaigon, Teams.VietSentinels];
+    this.groupA = [Teams.BFC1, Teams.FCCuaLo, Teams.SaiGonUnited, Teams.FC3Mien];
+    this.groupB = [Teams.BFC2, Teams.VinabisFC, Teams.Stechco, Teams.VietSentinels];
   }
 
   ngOnInit() {
