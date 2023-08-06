@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1691247350566,
+  "timestamp": 1691285362317,
   "index": "https://hoangvu1104.github.io/OneVietnameseOpen2023/index.html",
   "assetGroups": [
     {
@@ -73,14 +73,14 @@
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/9824.c512b904cf4c8833.js",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/9922.44ec96e4d7f86d18.js",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/9958.3f00a8ee581a0656.js",
-        "https://hoangvu1104.github.io/OneVietnameseOpen2023/common.354dc8af8694d6ae.js",
+        "https://hoangvu1104.github.io/OneVietnameseOpen2023/common.f344d68951050c09.js",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/index.html",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/main.4a7f9ee3d8e38ffe.js",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/manifest.webmanifest",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/polyfills-core-js.20e9fb5568c66479.js",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/polyfills-dom.3a5e3168052f1fc5.js",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/polyfills.fc6fad8ce607b49d.js",
-        "https://hoangvu1104.github.io/OneVietnameseOpen2023/runtime.d66ee87bdf0c4d42.js",
+        "https://hoangvu1104.github.io/OneVietnameseOpen2023/runtime.457dab6ff511fa91.js",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/styles.b8777235688abb5b.css"
       ],
       "patterns": []
@@ -117,6 +117,7 @@
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/Stechco.png",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/VMU.jpg",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/VietSentinels.jpg",
+        "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/Vinabis.jpg",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/WhiteTeam.jpg",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/YellowTeam.jpg",
         "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/shapes.svg"
@@ -212,17 +213,18 @@
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/Stechco.png": "c9df4924e297fc5e6cc4045fc61e4f27176b0222",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/VMU.jpg": "22d7185a76da16cacde9768f6078ea875ac10a9f",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/VietSentinels.jpg": "c31abda6dc28f50c3def1a79ee0fbd63b5098962",
+    "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/Vinabis.jpg": "14e07d21afb2789b6502dd3678695a64f7e44238",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/WhiteTeam.jpg": "a1288565dcc524eaa670f6af5a560a9529ab5515",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/images/YellowTeam.jpg": "1cb2de87286f0fd3e0810c3f5ac214fd6d135da6",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/assets/shapes.svg": "638f87e27e6fc7ddfd6e6b262ea70d690f6c7011",
-    "https://hoangvu1104.github.io/OneVietnameseOpen2023/common.354dc8af8694d6ae.js": "40184699e837a3782e6f38588c6f7bb47074703f",
-    "https://hoangvu1104.github.io/OneVietnameseOpen2023/index.html": "71e369c1cad52e126fb482d135c9943bc3550f79",
+    "https://hoangvu1104.github.io/OneVietnameseOpen2023/common.f344d68951050c09.js": "719e0f6121ee3d07266343d52d2380a86ef547d5",
+    "https://hoangvu1104.github.io/OneVietnameseOpen2023/index.html": "26321af5c754027d72979ba419cc8b7eb73cebc2",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/main.4a7f9ee3d8e38ffe.js": "44ffed6245eae9293f964f1bb0462f0064d05ecc",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/manifest.webmanifest": "da2061dba175bf2d881980e8596ff5343e2dd7b6",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/polyfills-core-js.20e9fb5568c66479.js": "7b2237821e79690f9dd2dac0b8a3b9ec6c229b76",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/polyfills-dom.3a5e3168052f1fc5.js": "50f6ff473a0568bffb8a9d412d7efaced2d36137",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/polyfills.fc6fad8ce607b49d.js": "29ecdc4392e1398b433f3838f08631c7ce701c6d",
-    "https://hoangvu1104.github.io/OneVietnameseOpen2023/runtime.d66ee87bdf0c4d42.js": "2adb9dca910573f63886b12f289b1381fc3844ae",
+    "https://hoangvu1104.github.io/OneVietnameseOpen2023/runtime.457dab6ff511fa91.js": "bb04734b7e3f1958c27d0e249018afc308905aba",
     "https://hoangvu1104.github.io/OneVietnameseOpen2023/styles.b8777235688abb5b.css": "55fc6146d8b18952e8a65c1c5c070d08dbea04fd"
   },
   "navigationUrls": [
