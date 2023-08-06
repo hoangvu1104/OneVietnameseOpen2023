@@ -40,7 +40,7 @@ export class CommonFunctions {
         break;
       case Teams.VinabisFC:
       case Teams.VinabisFC_Star:
-        imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.BlueTeam}` : `${StaticVariable.WhiteTeam}`);
+        imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.BlueTeam}` : `${StaticVariable.VinabisLogo}`);
         break;
       default:
         imagePath = `${StaticVariable.ImagesPath}` + (displayLogo ? `${StaticVariable.WhiteTeam}` : `${StaticVariable.CupLogo}`);

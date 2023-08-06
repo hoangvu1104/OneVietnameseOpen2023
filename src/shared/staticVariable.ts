@@ -7,6 +7,7 @@ export class StaticVariable {
   static FCCuaLoLogo: string = 'FCCuaLo.png';
   static BFCLogo: string = 'BFC.JPG';
   static VietSentinelsLogo: string = 'VietSentinels.jpg';
+  static VinabisLogo: string = 'Vinabis.jpg';
   static SaigonUnitedLogo: string = 'FCSaigonUnited.png';
   static CupLogo: string = 'Logo_OVO2023.png';
 
