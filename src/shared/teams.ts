@@ -1,8 +1,8 @@
 export class Teams {
-  static BFC1: string = 'BFC1';
-  static BFC1_Star: string = 'BFC1(*)';
-  static BFC2: string = 'BFC2';
-  static BFC2_Star: string = 'BFC2(*)';
+  static BFC1: string = 'BFC';
+  static BFC1_Star: string = 'BFC(*)';
+  static BFC2: string = 'JR-BFC';
+  static BFC2_Star: string = 'JR-BFC(*)';
   static FC3Mien: string = '3 Miền FC';
   static FC3Mien_Star: string = '3 Miền FC(*)';
   static FCCuaLo: string = 'FC Cửa Lò';
